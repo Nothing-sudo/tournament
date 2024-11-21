@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Showdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Dynamic Showdown</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tournament">Tournament</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Dynamic Showdown</h1>
+            <p>Are you ready for the ultimate battle?</p>
+            <a href="#register" class="cta-button">Register Now</a>
+            <div id="countdown" class="countdown">
+                <div>
+                    <span id="days"></span>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <span id="hours"></span>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <span id="minutes"></span>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <span id="seconds"></span>
+                    <span>Seconds</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="highlights">
+            <h2>Event Highlights</h2>
+            <div class="highlights-container">
+                <div class="highlight-card">
+                    <h3>Intense Battles</h3>
+                    <p>Experience heart-pounding action in every match!</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Massive Prizes</h3>
+                    <p>Compete for a prize pool worth over 100₹!</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Live Streaming</h3>
+                    <p>All matches will be streamed live on our official channels!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="top-teams">
+            <h2>Top Teams</h2>
+            <div class="teams-container">
+                <div class="team-card">Team Alpha</div>
+                <div class="team-card">Firestone</div>
+                <div class="team-card">Phoenix Squad</div>
+                <div class="team-card">Shadow Ops</div>
+            </div>
+        </section>
+
+        <section id="tournament">
+            <h2>Tournament Details</h2>
+            <div class="tournament-info">
+                <p><strong>Date:</strong> December 31, 2024</p>
+                <p><strong>Time:</strong> 12:00 PM GMT</p>
+                <p><strong>Format:</strong> The tournament will consist of group stages, followed by semifinals and finals.</p>
+            </div>
+            <h3>Rules</h3>
+            <ul>
+                <li>Teams must consist of 4 players</li>
+                <li>All players must be at least 14 years old</li>
+                <li>Cheating or exploiting will result in immediate disqualification</li>
+                <li>Matches will be played in Battle Royale mode</li>
+            </ul>
+            <h3>Prizes</h3>
+            <ul>
+                <li>1st Place: 100₹</li>
+                <!-- <li>2nd Place: $25,000</li>
+                <li>3rd Place: $10,000</li>
+                <li>4th-10th Place: $2,000 each</li> -->
+            </ul>
+            <h3>Schedule</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stage</th>
+                        <th>Date</th>
+                        <th>Matches</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Group Stage</td>
+                        <td>December 28-29, 2024</td>
+                        <td>32 teams, 8 groups</td>
+                    </tr>
+                    <tr>
+                        <td>Semifinals</td>
+                        <td>December 30, 2024</td>
+                        <td>Top 16 teams</td>
+                    </tr>
+                    <tr>
+                        <td>Finals</td>
+                        <td>December 31, 2024</td>
+                        <td>Top 8 teams</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Leaderboard</h3>
+            <table id="leaderboard">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Team</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Leaderboard data will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="register">
+            <h2>Register Your Team</h2>
+            <form id="registration-form">
+                <label for="team-name">Team Name</label>
+                <input type="text" id="team-name" name="team-name" required>
+
+                <label for="player1-name">Player 1 Name</label>
+                <input type="text" id="player1-name" name="player1-name" required>
+                <label for="player1-id">Player 1 Free Fire ID</label>
+                <input type="text" id="player1-id" name="player1-id" required>
+
+                <label for="player2-name">Player 2 Name</label>
+                <input type="text" id="player2-name" name="player2-name" required>
+                <label for="player2-id">Player 2 Free Fire ID</label>
+                <input type="text" id="player2-id" name="player2-id" required>
+
+                <label for="player3-name">Player 3 Name</label>
+                <input type="text" id="player3-name" name="player3-name" required>
+                <label for="player3-id">Player 3 Free Fire ID</label>
+                <input type="text" id="player3-id" name="player3-id" required>
+
+                <label for="player4-name">Player 4 Name</label>
+                <input type="text" id="player4-name" name="player4-name" required>
+                <label for="player4-id">Player 4 Free Fire ID</label>
+                <input type="text" id="player4-id" name="player4-id" required>
+
+                <label for="contact-email">Contact Email</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+
+                <label for="contact-phone">Contact Phone</label>
+                <input type="tel" id="contact-phone" name="contact-phone" required>
+
+                <button type="submit">Register Team</button>
+            </form>
+        </section>
+
+        <section id="gallery">
+            <h2>Tournament Gallery</h2>
+            <div class="gallery-container">
+                <div class="main-image">
+                    <img id="main-gallery-image" src="https://placehold.co/600x400" alt="Gallery image">
+                    <button id="prev-image">&lt;</button>
+                    <button id="next-image">&gt;</button>
+                </div>
+                <div class="thumbnail-container">
+                    <!-- Thumbnails will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions about the tournament? Want to become a sponsor? We'd love to hear from you!</p>
+                    <p>Email: haldarpoll2003@gmail.com</p>
+                    <p>Phone: +91 8145277901</p>
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dynamic Showdown. All rights reserved.</p>
+        <p>This tournament is not affiliated with or endorsed by Garena or Free Fire. All game assets and trademarks are property of their respective owners.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
